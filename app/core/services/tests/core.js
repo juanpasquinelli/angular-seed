@@ -7,7 +7,7 @@ describe('Service: CoreSrv', function () {
     var CoreSrv;
 
     beforeEach(function(){
-        module('Core.services');
+        module('Core');
 
         inject(function(_CoreSrv_) {
             CoreSrv = _CoreSrv_;
