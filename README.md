@@ -31,3 +31,13 @@ The seed also provides a setup file that will take care of installing all the de
 ## Documentation
 https://github.com/GlobantMobile/angular-seed/wiki
 
+## v0.2.0
+1. JShint
+2. CSSLint
+3. Unit and e2e tests runner
+4. Mockey
+5. Compass
+6. Code separated into three main directories: feateures/, common/, core/
+
+## Examples
+### [v0.2.0](https://github.com/GlobantMobile/angular-seed-examples)
