@@ -20,6 +20,7 @@ module.exports = function (grunt) {
     var globalConfig = {
         app: 'app',
         dist: 'dist',
+        core: 'core',
         tmp: '.tmp'
     };
 
@@ -43,7 +44,9 @@ module.exports = function (grunt) {
                     '<%= config.app %>/features/{,*/}/services/*.js',
                     '<%= config.app %>/common/filters/*.js',
                     '<%= config.app %>/common/directives/{,*/}*.js',
-                    '<%= config.app %>/common/services/*.js'
+                    '<%= config.app %>/common/services/*.js',
+                    '<%= config.app %>/core/filters/*.js',
+                    '<%= config.app %>/core/services/*.js'
                 ],
                 livereload: true,
                 tasks: ['jshint', 'clean:devScripts', 'copy:devScripts', 'cache-manifest']
@@ -143,7 +146,9 @@ module.exports = function (grunt) {
                 '<%= config.tmp %>/features/{,*/}/filters/*.js',
                 '<%= config.tmp %>/common/filters/*.js',
                 '<%= config.tmp %>/common/directives/{,*/}*.js',
-                '<%= config.tmp %>/common/services/*.js'
+                '<%= config.tmp %>/common/services/*.js',
+                '<%= config.tmp %>/core/filters/*.js',
+                '<%= config.tmp %>/core/services/*.js'
             ],
             devCss: [
                 '<%= config.tmp %>/styles/{,*/}*.css',
@@ -308,6 +313,8 @@ module.exports = function (grunt) {
                             'features/{,*/}/services/*.js',
                             'common/filters/*.js',
                             'common/directives/{,*/}*.js',
+                            'common/services/*.js',
+                            'common/filters/*.js',
                             'common/services/*.js'
                         ]
                     }
@@ -364,6 +371,7 @@ module.exports = function (grunt) {
                             '404.html',
                             'features/**',
                             'common/**',
+                            'core/**',
                             '*.{ico,png,txt}',
                             '.htaccess',
                             'images/{,*/}*.{gif,webp,svg,jpg}',
