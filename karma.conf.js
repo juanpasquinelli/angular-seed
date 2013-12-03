@@ -34,6 +34,11 @@ module.exports = function(config) {
       'app/common/services/{,*/}*.js',
       'app/common/filters/filters.js',
       'app/common/filters/{,*/}*.js',
+      'app/core/core.js',
+      'app/core/filters/filters.js',
+      'app/core/filters/{,*/}*.js',
+      'app/core/services/services.js',
+      'app/core/services/{,*/}*.js',
       'app/tests/unit/{,*/}*.js'
     ],
 
