@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('Common.services')
+angular.module('Core.services')
     .factory('ContentSrv', function(){
         var content = {};
 
@@ -40,5 +40,5 @@ angular.module('Common.services')
         return {
             init: init,
             get: get
-        }
+        };
     });

@@ -1,13 +1,13 @@
 'use strict';
 
-describe('Service: ContentSrv', function () {
+describe('Core: ContentSrv', function () {
 
     // load the controller's module
     // beforeEach(module('Common.services'));
     var ContentSrv;
 
     beforeEach(function(){
-        module('Common.services');
+        module('Core');
 
         inject(function(_ContentSrv_) {
             ContentSrv = _ContentSrv_;

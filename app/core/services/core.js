@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('Common.services')
+angular.module('Core.services')
     .factory('CoreSrv', function($filter){
         var filterBy = $filter('filter');
 
@@ -28,7 +28,7 @@ angular.module('Common.services')
                 return new Date(obj.getTime());
             }
             if (_.isRegExp(obj)) {
-                return new RegExp(obj.source, obj.toString().replace(/.*\//, ""));
+                return new RegExp(obj.source, obj.toString().replace(/.*\//, ''));
             }
             isArr = _.isArray(obj || _.isArguments(obj));
             func = function(memo, value, key) {
@@ -46,5 +46,5 @@ angular.module('Common.services')
             filterBy: filterBy,
             round: round,
             deepClone: deepClone
-        }
+        };
     });
