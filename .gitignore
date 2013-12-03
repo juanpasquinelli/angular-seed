@@ -1,0 +1,15 @@
+node_modules
+dist
+.tmp
+.sass-cache
+app/bower_components
+.svn
+.DS_Store
+coverage
+README.html
+app/styles/bundle.css
+app/styles/*.css
+app/features/*/styles/*.css
+*.appcache
+*.cache
+mockeyDebugFile.log
