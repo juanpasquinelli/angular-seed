@@ -49,7 +49,7 @@ module.exports = function (grunt) {
                     '<%= config.app %>/core/services/*.js'
                 ],
                 livereload: true,
-                tasks: ['jshint', 'clean:devScripts', 'copy:devScripts', 'cache-manifest']
+                tasks: ['jshint', 'clean:devScripts', 'copy:devScripts']
             },
             css: {
                 files: [
@@ -576,7 +576,6 @@ module.exports = function (grunt) {
             'copy:bowerComponents',
             'copy:dev',
             'clean:cssBundle',
-            'cache-manifest',
             'watch'
         ]);
     });
