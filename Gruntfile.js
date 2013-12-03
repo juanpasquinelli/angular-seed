@@ -328,7 +328,9 @@ module.exports = function (grunt) {
                             'common/directives/{,*/}*.js',
                             'common/services/*.js',
                             'common/filters/*.js',
-                            'common/services/*.js'
+                            'common/services/*.js',
+                            'core/filters/*.js',
+                            'core/services/*.js'
                         ]
                     }
                 ]
