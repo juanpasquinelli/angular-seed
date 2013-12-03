@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('Seed', ['ui.router', 'Seed.sectionName'])
+angular.module('Seed', ['ui.router', 'Core', 'Seed.sectionName'])
     .config(function ($urlRouterProvider, $stateProvider) {
         //redirect any invalid hash to /home
         $urlRouterProvider.otherwise('/');
