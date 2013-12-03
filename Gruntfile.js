@@ -185,7 +185,20 @@ module.exports = function (grunt) {
             },
             all: [
                 'Gruntfile.js',
-                '<%= config.app %>/scripts/{,*/}*.js'
+                '<%= config.app %>/features/*.js',
+                '<%= config.app %>/features/{,*/}/*.js',
+                '<%= config.app %>/features/{,*/}/controllers/*.js',
+                '<%= config.app %>/features/{,*/}/directives/{,*/}/*.js',
+                '<%= config.app %>/features/{,*/}/filters/*.js',
+                '<%= config.app %>/features/{,*/}/services/*.js',
+                '<%= config.app %>/common/filters/{,*/}*.js',
+                '<%= config.app %>/common/directives/{,*/}*.js',
+                '<%= config.app %>/common/services/{,*/}*.js',
+                '<%= config.app %>/core/core.js',
+                '<%= config.app %>/core/filters/{,*/}*.js',
+                '<%= config.app %>/core/services/{,*/}*.js',
+                '<%= config.app %>/tests/*.js',
+                '<%= config.app %>/tests/*/{,*/}.js'
             ]
         },
         csslint:{
