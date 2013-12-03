@@ -28,7 +28,7 @@ angular.module('Core.services')
                 return new Date(obj.getTime());
             }
             if (_.isRegExp(obj)) {
-                return new RegExp(obj.source, obj.toString().replace(/.*\//, ""));
+                return new RegExp(obj.source, obj.toString().replace(/.*\//, ''));
             }
             isArr = _.isArray(obj || _.isArguments(obj));
             func = function(memo, value, key) {
@@ -46,5 +46,5 @@ angular.module('Core.services')
             filterBy: filterBy,
             round: round,
             deepClone: deepClone
-        }
+        };
     });

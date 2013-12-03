@@ -12,13 +12,13 @@ angular.module('Core.filters')
                 matches = true;
                 angular.forEach(filter, function(value, key){
                     if(value){ // do not compare if value is empty
-                        matches = matches && (item[key] === value);  
+                        matches = matches && (item[key] === value);
                     }
                 });
                 if(matches){
-                    matching.push(item);  
+                    matching.push(item);
                 }
             });
             return matching;
-        }
+        };
     });

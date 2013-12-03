@@ -40,5 +40,5 @@ angular.module('Core.services')
         return {
             init: init,
             get: get
-        }
+        };
     });
