@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('Common.filters')
+angular.module('Core.filters')
     .filter('exactMatch', function(){
         return function(items, filter){
             if( !filter ){

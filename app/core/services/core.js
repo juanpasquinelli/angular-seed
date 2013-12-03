@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('Common.services')
+angular.module('Core.services')
     .factory('CoreSrv', function($filter){
         var filterBy = $filter('filter');
 

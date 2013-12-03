@@ -7,7 +7,7 @@ describe('Filter: ExactMatch', function () {
     var ExactMatch;
 
     beforeEach(function(){
-        module('Common.filters');
+        module('Core.filters');
 
         inject(function(_exactMatchFilter_) {
             ExactMatch = _exactMatchFilter_;
