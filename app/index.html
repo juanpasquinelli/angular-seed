@@ -26,7 +26,11 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container" ui-view="main-view"></div>
+    <div class="row">
+        <div class="ui-view-container">
+          <div ui-view="main-view"></div>        
+        </div>
+    </div> 
 
     <script src="bower_components/underscore/underscore-min.js"></script>
     <script src="bower_components/angular/angular.js"></script>
